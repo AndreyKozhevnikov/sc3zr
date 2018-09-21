@@ -37,9 +37,11 @@ function GetNormalizedIscThreadDetailsUrlById(ticketId) {
     return "https://" + ISC_THREAD_DETAILS_URL + "/" + ticketId;
 }
 function safeAnchorClickHandler(e) {
+    if (e.button ==0 || e.button==1) {
     //Do not change to $(this).attr('href') because of http://stackoverflow.com/questions/6977049/this-href-vs-this-attrhref
-    if (this.href) {
-        e.preventDefault();
-        chrome.runtime.sendMessage({ duplicateUrl: this.href, target: this.target });
-    }
+        if (this.href) {
+            e.preventDefault();
+            chrome.runtime.sendMessage({ duplicateUrl: this.href, target: this.target });
+        }
+  }
 }

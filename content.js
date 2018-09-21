@@ -178,11 +178,9 @@
     function preventDuplicateTabs() {
         if (getOptionValue("preventDuplicateTabs")) {
             var anchors = $("a.caption, a:not([href*='#'],[href='javascript:void(0)'],[href='/'])");
-            debugger;
             for (var i = 0; i < anchors.length; i++) {
-                //$(anchors[i]).on("click", safeAnchorClickHandler);
-                $(anchors[i]).off("click", safeAnchorClickHandler);
-                $(anchors[i]).click(safeAnchorClickHandler);
+                $(anchors[i]).off("mousedown", safeAnchorClickHandler);
+                $(anchors[i]).mousedown(safeAnchorClickHandler);
             }
             //$("a.caption, a:not([href*='#'],[href='javascript:void(0)'],[href='/'])").click(safeAnchorClickHandler);
             //$(document).click(function (e) {
