@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<versionStorage>
+  <auxPath value="net.tcp://vcsservice.devexpress.dev:9091/DXVCSService">
+    <projectPath value="$/Sandbox/Dennis/sc3zr(3)/Scripts" date="0">
+      <fileName value="_references.js" version="4" time="5247910434290314910" hash="OWwp49Vxer5qRSNgB4fg+w==" writeTime="5247880076249523202" />
+      <fileName value="jquery-2.1.0.min.js" version="1" time="5247169243723563120" hash="XKdYImHEIUgkNt/fOvm//g==" writeTime="5247032369588722270" />
+    </projectPath>
+  </auxPath>
+</versionStorage>

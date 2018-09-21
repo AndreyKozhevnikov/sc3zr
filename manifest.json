@@ -1,0 +1,54 @@
+{
+    "name": "Sc3zr by Dennis. Report any bugs & suggestions at dennis@devexpress.com.",
+    "description": "Improves the default UI & behavior of SC3.",
+    "version": "16.5.25",
+    "background": {
+        "scripts": [
+            "Scripts/jquery-2.1.0.min.js",
+            "Scripts/vue.min.js",
+            "shared.js",
+            "background.js"
+        ]
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            //http://stackoverflow.com/questions/16993372/chrome-extension-case-insensitive-content-script-matches
+            "matches": [
+                "*://*.internal.devexpress.com/supportstat/*",
+                "*://*.isc.devexpress.com/*",
+                "*://*.devexpress.com/support/center/question/details/*",
+                "*://*.devexpress.com/Support/Center/Question/Details/*",
+                "*://*.devexpress.com/support/center/Question/Details/*",
+                "*://*.devexpress.com/support/center/example/details/*",
+                "*://*.devexpress.com/Support/Center/Example/Details/*",
+                "*://*.devexpress.com/support/center/Example/Details/*"
+            ],
+            "js": [
+                "Scripts/jquery-2.1.0.min.js",
+                "shared.js",
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "*://*.documentation.devexpress.com/*",
+        "history",
+        "clipboardWrite",
+        "storage"
+    ],
+    "browser_action": {
+        "default_title": "Recent SC3 Tickets (Control+Shift+F)",
+        "default_popup": "popup.html",
+        "default_icon": "search.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F"
+            }
+        }
+    },
+    "manifest_version": 2
+}

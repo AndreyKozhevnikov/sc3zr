@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recent links</title>
+    <style>
+        /*body {
+            min-width: 750px;
+        }*/
+
+        li.selected {
+            background-color: #FFFFCC;
+        }
+
+        body {
+            padding-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .tabs-menu {
+            list-style-type: none;
+            /*height: 30px;
+            float: left;*/
+            clear: both;
+        }
+
+            .tabs-menu li {
+                height: 30px;
+                line-height: 30px;
+                float: left;
+                margin-right: 10px;
+                background-color: #ccc;
+                border-top: 1px solid #d4d4d1;
+                border-right: 1px solid #d4d4d1;
+                border-left: 1px solid #d4d4d1;
+            }
+
+                .tabs-menu li.current {
+                    position: relative;
+                    background-color: #fff;
+                    border-bottom: 1px solid #fff;
+                    z-index: 5;
+                }
+
+                .tabs-menu li a {
+                    padding: 10px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+            .tabs-menu .current a {
+                color: #2e7da3;
+            }
+
+        .tab {
+            border: 1px solid #d4d4d1;
+            background-color: #fff;
+            /*float: left;*/
+            margin-bottom: 20px;
+            width: auto;
+        }
+
+        .tab-content {
+            width: 1000px;
+            padding-top: 20px;
+            display: none;
+        }
+
+        #tab-1 {
+            display: block;
+        }
+    </style>
+    <script src='Scripts/jquery-2.1.0.min.js'></script>
+    <script src='Scripts/vue.min.js'></script>
+    <script src='shared.js'></script>
+    <script src='popup.js'></script>
+</head>
+<body>
+    <div id="tabs-container">
+        <ul class="tabs-menu">
+            <li class="current">
+                <a href="#tab-1">Tickets</a>
+            </li>
+            <li>
+                <a href="#tab-2">Documentation</a>
+            </li>
+        </ul>
+        <div class="tab">
+            <div id="tab-1" class="tab-content"></div>
+            <div id="tab-2" class="tab-content">
+                <div id="app">
+                    {{ message }}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

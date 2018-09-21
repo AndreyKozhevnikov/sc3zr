@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<versionStorage>
+  <auxPath value="net.tcp://vcsservice.devexpress.dev:9091/DXVCSService">
+    <projectPath value="$/Sandbox/Dennis/sc3zr(3)" date="0">
+      <fileName value="search.png" version="1" time="5247169194887729536" hash="EW4L9zVz7PPJsty+V9BmWQ==" writeTime="5246869025207387904" />
+      <fileName value="content.js" version="8" time="5247910434843266572" hash="null" writeTime="5247910409777740361" />
+      <fileName value="manifest.json" version="5" time="5247910434290314910" hash="vURnMuhlGdx++C6VEmZKuw==" writeTime="5247880174824756343" />
+      <fileName value="popup.js" version="3" time="5247910434290314910" hash="0o/WvQK4nmWSABwrwS7Jvg==" writeTime="5247910408117698138" />
+      <fileName value="popup.html" version="3" time="5247910434290314910" hash="EL4FklFHuSNG+TKpXh+flA==" writeTime="5247880089539663355" />
+      <fileName value="options.js" version="1" time="5247169194893348308" hash="ocrEplmvjg17NVwsTDi2/w==" writeTime="5247064920757052212" />
+      <fileName value="options.html" version="1" time="5247169194894440847" hash="cnMBZiPxNNSJ570NNfM6Gw==" writeTime="5247169185243977152" />
+      <fileName value="background.js" version="8" time="5247910434290314910" hash="0WQlc65S15kABjKv+ClTEg==" writeTime="5247910419948947944" />
+      <fileName value="constants.js" version="2" time="5247910434290158749" hash="CVsoygtu/Nz4e7frNjZqOw==" writeTime="5247814041100117867" />
+      <fileName value="readme.txt" version="1" time="5247684073189338833" hash="olqKLYmV/KuTmzpKvDercg==" writeTime="5247684070199159324" />
+      <fileName value="shared.js" version="1" time="5247910445336217388" hash="null" writeTime="5247910410007884859" />
+    </projectPath>
+  </auxPath>
+</versionStorage>

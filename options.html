@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sc3zr Options</title>
+    <style>
+        button#save {
+            width: 200px;
+        }
+    </style>
+    <script src='options.js'></script>
+</head>
+<body>
+    <h1>Options</h1>
+    <fieldset>
+        <legend>Style</legend>
+        <label for="defaultLabelSize">Details section labels font size:</label>
+        <input type="number" name="defaultLabelSize" id="defaultLabelSize" value="15" min="5" max="40" title="Font size in pixels for labels from the Details and other sections" />
+        <br />
+        <label for="defaultContentSize">Answers and comments font size:</label>
+        <input type="number" name="defaultContentSize" id="defaultContentSize" value="14" min="5" max="40" title="Font size in pixels for contents of ticket comments and answers" />
+        <br />
+        <label for="emphasizeSubmit">Resize the Submit button:</label>
+        <input type="checkbox" name="emphasizeSubmit" id="emphasizeSubmit" checked="checked" />
+        <input type="number" name="submitWidth" id="submitWidth" value="450" min="50" max="1500" title="Button width in pixels" />
+        <input type="number" name="submitHeight" id="submitHeight" value="48" min="10" max="100" title="Button height in pixels" />
+        <br />
+    </fieldset>
+        <fieldset>
+            <legend>Behavior</legend>
+            <label for="insertHelpTitle" title="When you insert a link to a DevExpress documentation article, move the focus out of the Url editor (e.g., via the Tab key) and wait a bit. If the article is already opened in the browser, then its title will be inserted into the Text field immediately. Otherwise, it will be done after 1-2 second delay as the new tab is created, queried and then closed.">Auto-insert title when adding links to help articles</label>
+            <input type="checkbox" name="insertHelpTitle" id="insertHelpTitle" checked="checked" />
+            <br />
+
+            <label for="preventDuplicateTabs">Prevent opening duplicate tabs for the same URL:</label>
+            <input type="checkbox" name="preventDuplicateTabs" id="preventDuplicateTabs" checked="checked" />
+            <br />
+
+            <label for="openTicketInSC3">Add the Open In SC3 link for tickets shown via www.devexpress.com/sc</label>
+            <input type="checkbox" name="openTicketInSC3" id="openTicketInSC3" checked="checked" />
+            <br />
+
+            <label for="copyIdOnDoubleClick">Copy the Id value to clipboard when double-clicking on the ticket subject</label>
+            <input type="checkbox" name="copyIdOnDoubleClick" id="copyIdOnDoubleClick" checked="checked" />
+            <br />
+            
+            <label for="recentTickets" title="Use the Control+Shift+F shortcut as an alternative to the browser button">Enable the recent tickets chooser:</label>
+            <input type="checkbox" name="recentTickets" id="recentTickets" checked="checked" />
+            <br />
+        </fieldset>
+        <button id="save" disabled="disabled">Save changes</button>
+</body>
+</html>
